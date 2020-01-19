@@ -4,7 +4,9 @@ import com.messiyang.aliwxplaydemo.pojo.Product;
 import com.messiyang.aliwxplaydemo.pojo.ProductExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ProductMapper {
     long countByExample(ProductExample example);
 

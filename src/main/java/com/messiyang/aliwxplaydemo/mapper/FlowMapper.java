@@ -4,7 +4,9 @@ import com.messiyang.aliwxplaydemo.pojo.Flow;
 import com.messiyang.aliwxplaydemo.pojo.FlowExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface FlowMapper {
     long countByExample(FlowExample example);
 
