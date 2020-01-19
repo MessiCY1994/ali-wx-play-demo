@@ -67,11 +67,25 @@
         </javaClientGenerator>
 
         <!-- 需要生成的表名以及实体类命名 -->
-        <table tableName="flow" domainObjectName="Flow"
+        <table tableName="orders" domainObjectName="Orders"
                enableCountByExample="true" enableUpdateByExample="true"
-               enableDeleteByExample="false" enableSelectByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
                selectByExampleQueryId="true">
         </table>
-
+        <table tableName="orders" domainObjectName="Orders"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="product" domainObjectName="Product"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="user" domainObjectName="User"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
     </context>
 </generatorConfiguration>

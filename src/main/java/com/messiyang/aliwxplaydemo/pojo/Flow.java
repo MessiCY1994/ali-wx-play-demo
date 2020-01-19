@@ -1,42 +1,85 @@
 package com.messiyang.aliwxplaydemo.pojo;
 
-import lombok.Data;
-
 import java.util.Date;
 
-@Data
-/**
- * 流水表
- */
 public class Flow {
     private String id;
-    /**
-     * 流水号
-     */
+
     private String flowNum;
-    /**
-     * 订单号
-     */
+
     private String orderNum;
-    /**
-     * 产品主键ID
-     */
+
     private String productId;
-    /**
-     * 支付金额
-     */
+
     private String paidAmount;
-    /**
-     * 支付方式\r\n            1：支付宝\r\n            2：微信
-     */
+
     private Integer paidMethod;
-    /**
-     * 购买个数
-     */
+
     private Integer buyCounts;
-    /**
-     * 创建时间
-     */
+
     private Date createTime;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
+    }
+
+    public String getFlowNum() {
+        return flowNum;
+    }
+
+    public void setFlowNum(String flowNum) {
+        this.flowNum = flowNum == null ? null : flowNum.trim();
+    }
+
+    public String getOrderNum() {
+        return orderNum;
+    }
+
+    public void setOrderNum(String orderNum) {
+        this.orderNum = orderNum == null ? null : orderNum.trim();
+    }
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId == null ? null : productId.trim();
+    }
+
+    public String getPaidAmount() {
+        return paidAmount;
+    }
+
+    public void setPaidAmount(String paidAmount) {
+        this.paidAmount = paidAmount == null ? null : paidAmount.trim();
+    }
+
+    public Integer getPaidMethod() {
+        return paidMethod;
+    }
+
+    public void setPaidMethod(Integer paidMethod) {
+        this.paidMethod = paidMethod;
+    }
+
+    public Integer getBuyCounts() {
+        return buyCounts;
+    }
+
+    public void setBuyCounts(Integer buyCounts) {
+        this.buyCounts = buyCounts;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 }
