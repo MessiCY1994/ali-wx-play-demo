@@ -18,7 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
-
+com/messiyang/aliwxplaydemo/config/AlipayConfig.java
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -29,3 +29,5 @@ build/
 
 ### VS Code ###
 .vscode/
+### system ignore ###
+.DS_Store
